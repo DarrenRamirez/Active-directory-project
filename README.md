@@ -108,13 +108,18 @@ The AD Security Lab project aimed to set up an Active Directory (AD) environment
    - Credential Dumping (T1003)
    - Persistence Techniques (T1050)
    - Process Injection (T1055)
+   
+<img src="https://imgur.com/TdXv22u.png" alt="Imgur Image" />
+
+*Ref 4b: Invoking <a href="https://attack.mitre.org/techniques/T1003/">**T1003**</a> in the MITRE ATT&CK framework using atomic red team* 
+
 3. **Observe Events** in Splunk:
    - Check indexes for new alerts or suspicious activity logs.
 4. **Correlate Logs** with Sysmon events to confirm detection.
 
-*Ref 5: Atomic Red Team Attack Simulation*
+<img src="https://imgur.com/5MOhYG1.png" alt="Imgur Image" />
 
-
+*Ref 5: Splunk logs*
 
 ## 6. Offensive Testing with Kali Linux
 
@@ -123,6 +128,8 @@ Using Kali Linux, I focused primarily on brute-forcing activities in the AD envi
 1. **Brute-Forcing with Crowbar**:
    - Deployed Crowbar to systematically attempt various username-password combinations.
    - Observed logs in Splunk for failed login attempts, suspicious account behaviors, and potential lockouts.
+
+<img src="https://imgur.com/4jFfNoX.png" alt="Imgur Image" />
 
 *Ref 6: Kali Linux Brute Force*
 
@@ -136,7 +143,9 @@ Using Kali Linux, I focused primarily on brute-forcing activities in the AD envi
 2. **Set Up Dashboards** to visualize top hosts, top event codes, and event timelines.
 3. **Refine and Test** repeated attacks to ensure alerts trigger as intended.
 
-*Ref 7: Splunk Alert Configuration*
+<img src="https://imgur.com/Z9xFQP8.png" alt="Imgur Image" />
+
+*Ref 7: Splunk Alert Configuration for brute force attacks*
 
 
 ## Conclusion
